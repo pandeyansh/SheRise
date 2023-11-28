@@ -1,0 +1,153 @@
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 22rem;
+  margin-top: 2%;
+  background-image: url('https://ik.imagekit.io/sayancr777/SheRise/office.jpg?updatedAt=1689503601239');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.testimonial {
+  max-width: 30%;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  height: 14rem;
+  text-align: center;
+  background-color: #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.testimonial-image {
+  display: flex;
+  align-items: center;
+}
+.testimonial-image img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+.name-title {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+}
+.title {
+  color: gray;
+}
+.prev, .next {
+  background-color: #f082edf3;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.prev {
+  left: 0;
+  margin-left: 28%;
+}
+.next {
+  right: 0;
+  margin-right: 28%;
+}
+.prev:disabled,
+.next:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+.quote-icon {
+  position: absolute;
+  top: -5%;
+  left: -5%;
+  width: 10%;
+  height: 15%;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon {
+  color: rgb(255, 143, 216);
+  font-size: 100%;
+}
+@media (max-width: 768px) {
+  .testimonial {
+    max-width: 80%;
+  }
+  .testimonial-image img {
+    width: 60px;
+    height: 60px;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  .name-title {
+    margin-left: 5%;
+  }
+  .quote-icon {
+    top: -3%;
+    left: -3%;
+    width: 8%;
+    height: 12%;
+  }
+  .prev, .next {
+    margin-right: -5%;
+    margin-left: 0%;
+  }
+}
+@media (max-width: 480px) {
+  .slider-container {
+    height: 100%;
+    margin:0%;
+  }
+  .testimonial {
+    max-width: 100%;
+    padding: 10px;
+    margin-top: -1%;
+  }
+  .testimonial-image img {
+    width: 60px;
+    height: 60px;
+    margin-right: 2%;
+    margin-left: 2%;
+  }
+  .name-title {
+    margin-left: 2%;
+  }
+  .quote-icon {
+    top: -1%;
+    left: -1%;
+    width: 6%;
+    height: 8%;
+  }
+  .title {
+    font-size: 18px;
+    margin: 0%;
+  }
+  .text {
+    font-size: 15px; 
+    margin-top: 2%;
+  }
+  .prev {
+    position: relative;
+    margin-top: 16%;
+    margin-bottom: 0%;
+  }
+  .next{
+    position: inherit;
+    margin-top:12% !important ;
+  }
+}

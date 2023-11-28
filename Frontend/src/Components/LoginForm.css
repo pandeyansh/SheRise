@@ -1,0 +1,126 @@
+.login h1 {
+  text-align: center;
+  color: #ff2e77;
+}
+.login-form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 350px; 
+}
+.login-main-form input[type="email"] {
+  width: 200%;
+  margin-left: -52%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+}
+.login-main-form input[type="password"] {
+  width: 200%;
+  margin-left: -52%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+}
+.login-button {
+  background-color: #ff2e777a;
+  color: white;
+  padding: 12px;
+  width: 100px;
+  margin-left: 64px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+.login-button:hover {
+  background-color: #71e669;
+}
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.login-desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  text-align: center;
+  width: 90%;
+}
+.login-desc p {
+  color: gray;
+}
+.create-account {
+  text-decoration: none;
+  color: gray;
+  margin-left: auto; 
+}
+@media screen and (max-width: 768px) {
+  .login-form-container {
+    max-width: 80%;
+    padding: 10px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .login-main-form input[type="email"],
+  .login-main-form input[type="password"] {
+    width: 90%;
+    margin-left: 1%;
+  }
+  .login-button {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff2e777a;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+  }
+  .login-button:hover {
+    background-color: #71e669;
+  }
+  .login-desc {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .login-desc p {
+    margin: 10px 0;
+  }
+  .create-account {
+    margin-left: 0;
+  }
+}

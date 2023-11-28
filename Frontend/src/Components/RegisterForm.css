@@ -1,0 +1,123 @@
+.reg-main-h {
+  text-align: center;
+  color: #ff2e77;
+  margin-top: -5%;
+}
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  max-width: 100%;
+}
+.reg-form-container {
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  width: 100%; 
+  max-width: 600px; 
+}
+.reg-main-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.register-name input,
+input[type="email"],
+input[type="password"],
+input[type="text"],
+select {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 2%;
+}
+.reg-textarea {
+  margin: 2%;
+  width: 95%;
+}
+.reg-select {
+  width: 100%;
+  margin: 2%;
+}
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 4px;
+}
+.register-button {
+  background-color: #f161f1;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  margin: 2%;
+}
+.register-button:hover {
+  background-color: #0056b3;
+}
+.register-desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+  margin: 2%;
+}
+.register-desc p {
+  color: gray;
+}
+.login-link {
+  text-decoration: none;
+  color: gray;
+  margin-left: auto;
+}
+@media screen and (max-width: 768px) {
+  .register-container {
+    align-items: center;
+    width: 80%;
+    margin: 2% 6%;
+  }
+  .register-name input,
+  input[type="email"],
+  input[type="password"],
+  input[type="text"],
+  select,
+  .register-social input {
+    width: 80%;
+    margin: 2% auto; 
+  }
+  .reg-textarea {
+    width: 80%;
+    margin: 2% auto; 
+  }
+  .register-button {
+    width: 80%;
+    margin: 2% auto; 
+  }
+  .reg-select {
+    width: 80%;
+    margin: 2% auto;
+  }
+  .register-desc {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .register-desc p {
+    margin: 10px 0;
+  }
+  .register-desc a {
+    margin: 10px 0;
+  }
+  .login-link {
+    margin-left: auto;
+  }
+}

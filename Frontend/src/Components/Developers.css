@@ -1,0 +1,125 @@
+.developers-heading {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+}
+.developers-profile {
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 50px;
+  grid-template-columns: repeat(4, 1fr);
+  display: grid;
+}
+.dev-outer-cards {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  width: 280px; 
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+.dev-outer-cards:hover {
+  transform: scale(1.05); 
+}
+.dev-card-details {
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex; 
+  flex-direction: column;
+  text-align: center;
+}
+.avatar {
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10%;
+}
+.avatar.ansh-avatar {
+background-image: url('../Components/ourTeamPhotos/Ansh.jpeg');
+}
+.profile-name p:first-child {
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+}
+.profile-name p:last-child {
+  font-size: 16px;
+  color: #888;
+}
+.dev-card-buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.dev-card-buttons a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 5px 10px;
+  width: auto; 
+  height: 30px;
+  margin-right: 10px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25%;
+}
+@media screen and (max-width: 768px) {
+  .developers-heading {
+    font-size: 24px;
+  }
+  .developers-profile {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    gap: 8px;
+    grid-template-columns: repeat(1, 1fr); 
+  }
+  .dev-outer-cards {
+    width: 100%; 
+    max-width: 200px; 
+    height: auto; 
+  }
+  .avatar {
+    width: 120px; 
+    height: 120px; 
+    margin-left: 0; 
+  }
+  .profile-name p:first-child {
+    font-size: 16px;
+  }
+  .profile-name p:last-child {
+    font-size: 14px; 
+  }
+  .dev-card-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  .dev-card-buttons a {
+    margin-top: 5px; 
+  }
+.dev-outer-cards {
+  transition: transform 0.3s ease-in-out; 
+}
+.dev-outer-cards:hover {
+  transform: scale(1.05);
+}
+}
+@media screen and (max-width: 480px) {
+  .developers-heading {
+    font-size: 20px; 
+  }
+}
